@@ -1,0 +1,34 @@
+/* Estilos para centrar el formulario-container y el formulario */
+body {
+  margin: 0;
+  padding: 0;
+
+
+}
+
+.formulario-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Puedes ajustar la altura del contenedor si es necesario */
+}
+
+.formulario {
+  width: 80%;
+  max-width: 500px;
+  padding: 20px;
+  /* Otros estilos para el formulario */
+}
+
+/* Media queries para ajustar el tamaño del formulario en pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .formulario {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .formulario {
+    width: 95%;
+  }
+}

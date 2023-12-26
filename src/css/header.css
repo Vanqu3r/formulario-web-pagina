@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    width: 100%; /* Ocupar todo el ancho de la pantalla */
+    height: 8vh;
+    display: flex; /* Utilizar flexbox para organizar los elementos */
+}
+
+.header-logo {
+    width: 20%;
+    background-color: #7a252d;
+}
+
+
+.header-nombre {
+    width: 80%;
+    background-color: #d1b55f;
+    display: flex;
+    align-items: center;
+    padding-right: 2vh;
+}
+
+.small-text {
+    font-size: 0.5vh; /* Tamaño de fuente más pequeño para el segundo texto */
+    margin-top: -1vh; /* Ajuste para superponer el segundo texto */
+}
+
+.header-container p {
+    padding-top: 1vh; /* Separación desde el borde superior */
+    padding-left: 2vh;
+    font-size: 1.5vh;
+    color: white;
+    line-height: 0; /* Reducir el espaciado entre líneas */
+}
+/* Añadir estilos CSS adicionales para mover el botón hacia la derecha */
+.btn {
+    margin-left: auto; /* Mover el botón hacia la derecha utilizando margen automático */
+}
