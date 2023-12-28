@@ -1,0 +1,42 @@
+/* acreditados.css */
+
+/* Estilos para el contenedor principal */
+.Principal {
+  width: 80%; /* Ancho del div Principal */
+  margin: 0 auto; /* Centra horizontalmente */
+  padding-top: 50px; /* Espacio superior */
+  /* Agrega otros estilos según sea necesario */
+}
+
+
+/* Estilos para centrar la tabla */
+.table-responsive-lg {
+  margin: 0 auto; /* Centra horizontalmente */
+  width: 80%; /* Ancho de la tabla */
+  padding-top: 50px; /* Espacio superior */
+}
+
+
+
+/* Estilos para el contenedor */
+.container {
+  width: 50%; /* Ancho del contenedor */
+  margin: 0 auto; /* Centra horizontalmente */
+  padding-top: 50px; /* Espacio superior */
+}
+
+/* Estilos para la tabla */
+.table {
+  width: 100%; /* Ancho de la tabla al 100% del contenedor */
+  /* Agrega estilos adicionales según tus necesidades */
+}
+
+/* Estilos para filas */
+.table tbody tr {
+  /* Estilos para las filas de la tabla */
+}
+
+/* Estilos para celdas */
+.table tbody tr th {
+  /* Estilos para las celdas de la tabla */
+}

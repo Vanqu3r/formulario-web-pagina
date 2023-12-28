@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import '../css/formularioAcreditado.css';
 
+
 const FormularioAcreditado = () => {
 
     const {register,handleSubmit} = useForm();
@@ -23,33 +24,34 @@ const FormularioAcreditado = () => {
         <div className="formulario-container">
           <div className="formulario">  
             <h2>Registro de Usuario</h2>
-            <form onSubmit={handleSubmit(onSubmit)} >
-                <div>
-                    <label>RFC con Homoclave</label>
-                    <input type="text" {...register('nombre')}></input>
+            <form class="row g-3" onSubmit={handleSubmit(onSubmit)} >
+                <div class=" form-floating col-md-4"   >
+
+                    <input type="text"  id="floatingInput" class="form-control" placeholder="RFC"  {...register('nombre')}></input>
+                    <label for="floatingInput">RFC con Homoclave</label>
                 </div>
-                <div>
+                <div class="col-md-4">
                     <label>Nombre o razón socia</label>
                     <input type="text"></input>
                 </div>
-                <div>
+                <div class="col-md-4">
                     <label>Nombre o razón socia</label>
                     <input type="text"></input>
                 </div> 
-                <div>
+                <div  class="col-md-4">
                     <label>Núm de Empleados</label>
                     <input type="number"></input>
                 </div>
-                <div>
-                    <label>Fecha de inicio de operaciones</label>
+                <div  class="col-md-4">
+                    <label>Fecha de inicio de O.</label>
                     <input type="date"></input>
                 </div> 
-                <div>
+                <div  class="col-md-2">
                     <label>Telefono</label>
                     <input type="number"></input>
                 </div>
                 <div>
-                    <label>Telefono WhastApp</label>
+                    <label >Telefono WhastApp</label>
                     <input type="number"></input>
                 </div>
                 <div>
@@ -88,7 +90,9 @@ const FormularioAcreditado = () => {
                     <label>Discapacidad</label>
                     <select></select>
                 </div>
-                <input type="submit" value="Enviar"></input>                                  
+                <div >
+                <input type="submit" value="Enviar"></input>  
+                </div>                                
             </form>
             </div>  
         </div>

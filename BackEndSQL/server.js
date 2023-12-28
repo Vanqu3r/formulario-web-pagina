@@ -44,6 +44,20 @@ app.get('/acreditado', (req,res)=>{
     })
 })
 
+app.get('/acreditado/usuario/:id', (req,res)=>{
+    const id = req.params.id;
+    const sql = "SELECT * FROM acreditado WHERE ID_Acreditado = ?";
+    const values =[
+        req.body.nombre,
+    ]
+    db.query(sql, [id], (err, data)=>{
+        if(err) return res.json(err);
+        return res.json(data);
+    })
+})
+
+
+
 app.listen(8001,()=>{
     console.log('Algo')
 })

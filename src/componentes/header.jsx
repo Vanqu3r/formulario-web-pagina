@@ -10,7 +10,15 @@ const header = () => {
                     <p>SECRETARÍA DE HACIENDA</p>
                     <p className="small-text">SISTEMA DE CONTROL DE COBRANZA</p>
                 </div>
-                <button type="button" className="btn btn-outline-warning">Usuarios</button>
+                <div class="dropdown me-1">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
+                    Menu
+                    </button>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/">Inicio</a></li>
+                    <li><a class="dropdown-item" href="/acreditados">Acreditados</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     );

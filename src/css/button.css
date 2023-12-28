@@ -1,36 +1,57 @@
+/* Estilos generales para el cuerpo de la página */
 body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh; /* Asegura que el cuerpo tenga al menos el 100% de la altura de la ventana */
-    position: relative; /* Para permitir el posicionamiento relativo */
-    
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
+/* Estilos para el contenedor principal del footer */
 .wrapper {
-    position: relative;
+  width: 100%;
+  position: relative;
+  margin-top: auto; /* Empujar el footer hacia abajo */
 }
 
-
-
-
+/* Estilos para el contenedor de botones */
 .button-container {
-    width: 100%;
-
-    display: flex;
-    position: absolute;
-    bottom: 0; /* Lo coloca en la parte inferior */
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente los elementos */
+  position: relative;
+  bottom: 0;
 }
 
+/* Estilos para el botón */
 .button-nombre {
-    width: 100%;
-    background-color: #7a252d;
+  width: 100%;
+  background-color: #7a252d;
+  text-align: center;
+  padding: 10px; /* Ajustar el relleno según sea necesario */
+  margin: 0; /* Asegúrate de que no haya márgenes externos */
+  box-sizing: border-box; /* Asegúrate de que el padding y el borde se incluyan en el ancho y alto */
 }
 
+/* Estilos para el texto dentro del botón */
 .button-container p {
-    text-align: center; /* Centrar el texto horizontalmente */
-    font-size: 1.5vh;
-    color: rgb(207, 171, 52);
-    line-height: 2; /* Centrar verticalmente el texto */
-    margin: 0; /* Ajustar el margen a cero para evitar espacios adicionales */
-    padding: 0; /* Ajustar el relleno a cero */
+  font-size: 1.5rem; /* Utilizar unidades rem para el tamaño de fuente */
+  color: rgb(207, 171, 52);
+  margin: 0;
+  line-height: 1.5; /* Ajustar el espaciado entre líneas según sea necesario */
 }
+
+/* Media queries para hacer los estilos más responsivos */
+@media screen and (max-width: 768px) {
+  /* Agregar estilos específicos para pantallas más pequeñas */
+  .button-nombre {
+      /* Cambiar estilos para adaptarse a pantallas más pequeñas */
+      padding: 8px;
+  }
+
+  .button-container p {
+      font-size: 1.2rem; /* Modificar el tamaño de fuente para pantallas más pequeñas */
+  }
+}
+
+/* Otras media queries según las necesidades de tu diseño para diferentes tamaños de pantalla */
