@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Axios from 'axios';
 import '../css/acreditados.css';
+
 import {Link } from 'react-router-dom';
 
 const Acreditados = () => {

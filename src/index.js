@@ -16,7 +16,7 @@ const Root = () => {
         <Route path="/acreditados" element={<Acreditados />} />
         <Route path="/acreditado/usuario/:id" element={<PerfilUsuario />} />
       </Routes>
-      <Button />
+     
     </BrowserRouter>
     
     );

@@ -28,7 +28,7 @@
 /* Estilos para la tabla */
 .table {
   width: 100%; /* Ancho de la tabla al 100% del contenedor */
-  /* Agrega estilos adicionales según tus necesidades */
+  font-size: 100;
 }
 
 /* Estilos para filas */
