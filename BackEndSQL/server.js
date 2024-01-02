@@ -65,6 +65,17 @@ app.get('/acreditado/usuario/abonoIdeal/:id', (req,res)=>{
 })
 
 
+app.get('/acreditado/usuario/abono/:id', (req,res)=>{
+    const id = req.params.id;
+    const sql = "SELECT * FROM abonos WHERE ID_Financiamineto = ?";
+    
+    db.query(sql, [id], (err, data)=>{
+        if(err) return res.json(err);
+        return res.json(data);
+    })
+})
+
+
 
 app.listen(8001,()=>{
     console.log('Algo')

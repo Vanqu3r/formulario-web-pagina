@@ -17,6 +17,7 @@ const header = () => {
                     <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="/">Inicio</a></li>
                     <li><a class="dropdown-item" href="/acreditados">Acreditados</a></li>
+                    <li><a class="dropdown-item" href="/acreditado/finanzamiento">Finanzamiento</a></li>
                     </ul>
                 </div>
             </div>
