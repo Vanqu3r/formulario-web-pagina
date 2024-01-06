@@ -8,7 +8,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   /* Puedes ajustar la altura del contenedor si es necesario */
 }
 
@@ -32,4 +32,8 @@ body {
   .formulario {
     width: 95%;
   }
+}
+.asterisk::after {
+  content: "*";
+  color: red;
 }

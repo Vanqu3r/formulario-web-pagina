@@ -8,15 +8,12 @@
   /* Agrega otros estilos según sea necesario */
 }
 
-
 /* Estilos para centrar la tabla */
 .table-responsive-lg {
   margin: 0 auto; /* Centra horizontalmente */
   width: 80%; /* Ancho de la tabla */
   padding-top: 50px; /* Espacio superior */
 }
-
-
 
 /* Estilos para el contenedor */
 .container {
@@ -31,6 +28,10 @@
   font-size: 100;
 }
 
+.table td {
+  font-weight: normal; /* Quitar el formato en negrita */
+  font-family: "Arial", sans-serif; /* Cambiar el tipo de fuente */
+}
 /* Estilos para filas */
 .table tbody tr {
   /* Estilos para las filas de la tabla */
